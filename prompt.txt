@@ -1,0 +1,39 @@
+for project 1: 
+- rename it to "Game Development Camp"
+- describe the project as:  taught grades 7-8 the fundamentals of engineering design processes, code fundamentals, and how to iterate and optimize their game creation using Python and block coding.
+- make it sound better
+
+for project 4:
+- rename it as something related to handling sponsorships (e.g., package and communication)
+- change the description
+
+for project 5:
+- rename it as "Automated Ledger"
+- describe it as: "Using Google Apps Script/JavaScript to automate EngSoc's ledger upon submitting a Google Form with values and categories for financial transparency."
+- make it sound better
+- add a GitHub link like project 7
+
+for project 6:
+- rename is as Project Management
+- redo the description so it includes "Click Up" the project management tool i used
+
+for project 7:
+- reanme it as "Papa's Scooperia"
+- redo the description explaining that i used python to code papa's Scooperia
+
+for project 8:
+- rename it as "BioBlock - Natural Filter"
+- description: explain how its a solution towards creating a cheaper alternative for farmers in the BC region mitigating drought season using a filter that is inserted in a river
+- make it sound better
+
+add another project
+for project 9:
+- rename it as: PlanAid
+- description: explain how its an app for optimize, organize, and maximize hosipital workflows for better patient-to-doctor times; basically optimizing work schedules of nurses and doctors to prevent burnout and the wellbeing of them too.
+- make the project link title: Ideathon @ Brilliant Catalyst Ontario Tech
+
+add another project
+for project 10:
+- rename it as: Mapping X
+- description: explain how i worked with another individual and i worked on the UI/UX of the app. the app iwas an interactive map that used NASA's data in community mapping to allow users to 3D print regions for terrain and water elevation analysis using NASA's Earth Data. 
+- project link title: NASA Space Apps @ Oshawa
