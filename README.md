@@ -16,15 +16,8 @@ Visit my portfolio at: [https://jeskamaya.github.io](https://jeskamaya.github.io
 
 ## 💻 Technologies Used
 
-- HTML5
-- CSS3 (Custom animations and gradients)
-- JavaScript (Vanilla)
-- Font Awesome Icons
-- Google Fonts (Inter)
-
-## 🎨 Design Philosophy
-
-The website features a clean, modern design with a pink color scheme that reflects my creative approach to engineering. The combination of technical projects and aesthetic design represents my interdisciplinary skills.
+- Claude.ai
+- Figma
 
 ## 📫 Contact
 
