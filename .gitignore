@@ -1,0 +1,38 @@
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Dependencies
+node_modules/
+
+# Environment files
+.env
+.env.local
+
+# Build files
+dist/
+build/
+
+# Logs
+*.log
+
+# Personal/sensitive files
+secrets.txt
+passwords.txt
+*.key
+*.pem
+
+# Temporary files
+*.tmp
+*.temp
+~*
+
+# Claude AI files
+.claude/
+prompt.txt
+
+# Custom - add your own here
+# example: my-private-notes.txt
