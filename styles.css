@@ -210,6 +210,11 @@ html {
     box-shadow: 0 20px 40px rgba(255, 179, 179, 0.3);
     position: relative;
     animation: float 6s ease-in-out infinite;
+
+    display: flex;              
+    justify-content: center;    
+    align-items: center;        
+    overflow: hidden;
 }
 
 
