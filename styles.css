@@ -407,7 +407,7 @@ section {
     transition: opacity 0.3s ease;
 }
 
-.project-screenshot {
+/* .project-image img.project-screenshot {
     position: absolute;
     top: 0;
     left: 0;
@@ -416,7 +416,7 @@ section {
     object-fit: cover;
     opacity: 0;
     transition: opacity 0.3s ease;
-}
+} */
 
 .project-card:hover .project-screenshot {
     opacity: 1;
