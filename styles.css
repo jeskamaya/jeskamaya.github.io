@@ -407,19 +407,59 @@ section {
     transition: opacity 0.3s ease;
 }
 
-.project-screenshot {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+.modal {
+    display: none; /* hidden by default */
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
 }
 
-.project-card:hover .project-screenshot {
-    opacity: 1;
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 800px;
+    width: 90%;
+    animation: popUp 0.3s ease;
+}
+
+@keyframes popUp {
+    from { transform: scale(0.9); opacity: 0;}
+    to { transform: scale(1); opacity: 1;}
+}
+
+.modal-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.modal-gallery img {
+    width: 100%;
+    border-radius: 0.5rem;
+    transition: transform 0.2s ease;
+}
+
+.modal-gallery img:hover {
+    transform: scale(1.02);
+}
+
+.close {
+    float: right;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.project-card {
+    cursor: pointer;
 }
 
 .project-card:hover .image-placeholder {

@@ -109,23 +109,22 @@
         <div class="container">
             <h2 class="section-title">My Projects</h2>
             <div class="projects-grid">
-
                 <div class="project-card">
                     <div class="project-image">
                         <div class="image-placeholder">
-                            <i class="fas fa-hospital"></i>
+                            <i class="fas fa-tshirt"></i>
                         </div>
                     </div>
                     <div class="project-content">
                         <h3>AgriShare</h3>
-                        <p>Collaborated with a team of 4 to develop a community-driven platform that helps gardeners share surplus harvests with local communities. It combines IoT plant monitoring (optional), AI-powered plant avatars, and a neighborhood food-sharing network to reduce waste and improve food access.</p>
+                        <p>Collaborated with a team of 4 and created a A community-driven platform that helps gardeners share surplus harvests with local communities. It combines IoT plant monitoring (optional), AI-powered plant avatars, and a neighborhood food-sharing network to reduce waste and improve food access.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Sustainability</span>
-                            <span class="tech-tag">UI/UX Design</span>
-                            <span class="tech-tag">Technical Presentation</span>
+                            <span class="tech-tag">Public Speaking</span>
+                            <span class="tech-tag">UI Design</span>
                         </div>
                         <div class="project-links">
-                            <span class="project-link">Ideathon @ Brilliant Catalyst Ontario Tech</span>
+                            <span class="project-link">Ideathon @ Brilliant Catalyst</span>
                         </div>
                     </div>
                 </div>
@@ -169,12 +168,11 @@
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" onclick="openModal('hoodieDesignModal')">
                     <div class="project-image">
                         <div class="image-placeholder">
                             <i class="fas fa-tshirt"></i>
                         </div>
-                        <!-- Add your screenshot here: <img src="screenshots/hoodie-design.png" alt="Hoodie Design" class="project-screenshot"> -->
                     </div>
                     <div class="project-content">
                         <h3>Hoodie Merch Design</h3>
@@ -188,6 +186,21 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Modal for Hoodie Design Project Card -->
+                 <div id="hoodieDesignModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('hoodieDesignModal')">&times;</span>
+                        <h2>Hoodie Designs</h2>
+                        <p>Designed the software and mechanical hoodies. The mechanical design ended up being used and iterated for final production.</p>
+
+                        <!-- Gallery inside modal of hoodie designs-->
+                         <div class="modal-gallery">
+                            <img src="assets/software-hoodie-design.png" alt="Software Hoodie Design">
+                            <img src="assets/ver1-mechanical-hoodie-design.png" alt="Mechanical Hoodie Design"> 
+                         </div>
+                    </div>
+                 </div>
 
                 <div class="project-card">
                     <div class="project-image">
@@ -380,9 +393,7 @@
 
                 <div class="testimonial-card">
                     <div class="testimonial-content">
-                        <p class="testimonial-text">"Maya is reliable, bright, and a joyous individual. I highly recommend Maya for any role
-                            where she is able to share her marketing, communication, and project coordination skills. Please
-                            do not hesitate to contact me with any questions regarding Maya's experience with ASME"</p>
+                        <p class="testimonial-text">"Maya brings a youthful perspective which helps her in creating engaging events and content for our engineering community.Maya is reliable, bright, and a joyous individual. I highly recommend Maya for any role where she is able to share her marketing, communication, and project coordination skills. Please do not hesitate to contact me with any questions regarding Maya’s experience with ASME"</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">
@@ -430,7 +441,7 @@
                         <span class="skill-item">Stakeholder Communication</span>
                         <span class="skill-item">Curriculum Development</span>
                         <span class="skill-item">Public Speaking</span>
-                                                  <span class="skill-item">Team Collaboration</span>
+                        <span class="skill-item">Team Collaboration</span>
                     </div>
                 </div>
             </div>

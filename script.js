@@ -249,6 +249,35 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(typeWriter, 500);
     }
 
+    function openModal(id) {
+        const modal = document.getElementById(id);
+        if (modal) {
+            modal.classList.add("show");
+        } else {
+            console.error("Modal not found:", id);
+        }
+    }
+    
+    function closeModal(id) {
+        const modal = document.getElementById(id);
+        if (modal) {
+            modal.classList.remove("show");
+        }
+    }
+
+    window.openModal = openModal;
+    window.closeModal = closeModal;
+    
+    // Optional: close modal when clicking outside content
+    window.addEventListener("click", function (event) {
+        const modals = document.querySelectorAll(".modal.show");
+        modals.forEach(modal => {
+            if (event.target === modal) {
+                modal.classList.remove("show");
+            }
+        });
+    });    
+
     // Scroll to top button
     const scrollToTopBtn = document.createElement('button');
     scrollToTopBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
