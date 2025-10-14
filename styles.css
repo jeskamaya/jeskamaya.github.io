@@ -410,26 +410,34 @@ section {
 .modal {
     display: none; /* hidden by default */
     position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
     background: rgba(0, 0, 0, 0.6);
     justify-content: center;
     align-items: center;
-    z-index: 999;
+    z-index: 9999;
+    overflow-y: auto; /* allows scrolling if too tall */
+    padding: 2rem; /* gives breathing room on smaller screens */
 }
+
 
 .modal.show {
     display: flex;
 }
 
 .modal-content {
-    background: white;
+    background: #fff;
     padding: 2rem;
     border-radius: 1rem;
-    max-width: 800px;
+    max-width: 900px; /* limits how wide it can stretch */
     width: 90%;
-    animation: popUp 0.3s ease;
+    max-height: 90vh; /* ensures it fits vertically */
+    overflow-y: auto; /* scrolls inside if text/images are too tall */
+    box-sizing: border-box;
 }
+
 
 @keyframes popUp {
     from { transform: scale(0.9); opacity: 0;}
@@ -438,18 +446,23 @@ section {
 
 .modal-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
+    justify-items: center;
 }
 
 .modal-gallery img {
     width: 100%;
+    max-width: 350px;
+    height: auto;
     border-radius: 0.5rem;
-    transition: transform 0.2s ease;
+    object-fit: cover;
 }
+
 
 .modal-gallery img:hover {
     transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 }
 
 .close {
