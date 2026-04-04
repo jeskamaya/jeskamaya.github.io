@@ -33,6 +33,8 @@ html {
     scroll-behavior: smooth;
 }
 
+
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -211,17 +213,17 @@ html {
     position: relative;
     animation: float 6s ease-in-out infinite;
 
-    display: flex;              
-    justify-content: center;    
-    align-items: center;        
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
 .circle-placeholder img {
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
     object-fit: cover;
+    border-radius: 50%;
 }
 
 @keyframes float {
@@ -285,6 +287,11 @@ section {
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
 }
+
+.center-text {
+    text-align: center;
+}
+
 .resume-button-container {
     margin-top: 2rem;
     display: flex;
@@ -398,7 +405,6 @@ section {
     overflow: hidden;
 }
 
-
 .project-title {
     transition:outline 0.3s ease;
 }
@@ -412,7 +418,6 @@ section {
      1px  1px 0 #202020; */
 }
 
-
 .project-image .image-placeholder {
     width: auto;
     height: auto;
@@ -422,19 +427,72 @@ section {
     transition: opacity 0.3s ease;
 }
 
-/* .project-image img.project-screenshot {
-    position: absolute;
+.modal {
+    display: none; /* hidden by default */
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-} */
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow-y: auto; /* allows scrolling if too tall */
+    padding: 2rem; /* gives breathing room on smaller screens */
+}
 
-.project-card:hover .project-screenshot {
-    opacity: 1;
+
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 900px; /* limits how wide it can stretch */
+    width: 90%;
+    max-height: 90vh; /* ensures it fits vertically */
+    overflow-y: auto; /* scrolls inside if text/images are too tall */
+    box-sizing: border-box;
+}
+
+
+@keyframes popUp {
+    from { transform: scale(0.9); opacity: 0;}
+    to { transform: scale(1); opacity: 1;}
+}
+
+.modal-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+}
+
+.modal-gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+
+.modal-gallery img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.close {
+    float: right;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.project-card {
+    cursor: pointer;
 }
 
 .project-card:hover .image-placeholder {

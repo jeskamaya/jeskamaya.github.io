@@ -253,8 +253,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const modal = document.getElementById(id);
         if (modal) {
             modal.classList.add("show");
-        } else {
-            console.error("Modal not found:", id);
         }
     }
     
