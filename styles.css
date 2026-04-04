@@ -285,6 +285,11 @@ section {
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
 }
+
+.center-text {
+    text-align: center;
+}
+
 .resume-button-container {
     margin-top: 2rem;
     display: flex;
@@ -397,6 +402,21 @@ section {
     position: relative;
     overflow: hidden;
 }
+
+
+.project-title {
+    transition:outline 0.3s ease;
+}
+
+.project-title:hover {
+    color: #202020;
+    /* text-shadow:
+    -1px -1px 0 #202020,
+     1px -1px 0 #202020,
+    -1px  1px 0 #202020,
+     1px  1px 0 #202020; */
+}
+
 
 .project-image .image-placeholder {
     width: auto;
