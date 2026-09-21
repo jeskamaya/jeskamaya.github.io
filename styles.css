@@ -170,10 +170,11 @@ html {
     text-decoration: none;
     font-weight: 500;
     transition: var(--transition);
-    display: inline-block;
+    display: inline-flex;
     cursor: pointer;
-    border: none;
+    border: 2px solid transparent;
     font-size: 1rem;
+    line-height: 1;
 }
 
 .btn-primary {
@@ -405,16 +406,6 @@ section {
     overflow: hidden;
 }
 
-.project-no-image {
-    height: 200px;
-    background: #d8c2c2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-}
-
 .project-title {
     transition:outline 0.3s ease;
 }
@@ -574,6 +565,7 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
+    align-items: start;
 }
 
 .testimonial-card {
@@ -620,6 +612,9 @@ section {
 .author-avatar {
     width: 50px;
     height: 50px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    overflow: hidden;
     background: var(--gradient-primary);
     border-radius: 50%;
     display: flex;
@@ -628,6 +623,14 @@ section {
     color: var(--white);
     font-weight: 600;
     font-size: 1.125rem;
+    border: 2px solid var(--primary-color);
+}
+
+.author-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .author-info h4 {
