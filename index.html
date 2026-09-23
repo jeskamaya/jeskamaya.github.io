@@ -114,7 +114,7 @@
             <div class="projects-grid">
 
 
-                <div class="project-card"><!-- onclick="openModal('agriShareModal')-->
+                <div class="project-card" onclick="openModal('elecModal')">
                     <div class="project-image">
                         <div class="image-placeholder">
                             <i class="fa fa-microchip"></i>
@@ -135,7 +135,7 @@
                         </div>
                 </div>
 
-                <div class="project-card"><!-- onclick="openModal('agriShareModal')-->
+                <div class="project-card" onclick="openModal('cadModal')">
                     <div class="project-image">
                         <div class="image-placeholder">
                             <i class="fa fa-cube"></i>
@@ -378,6 +378,30 @@
     </section>
 
     
+    <!-- electronics modal-->
+    <div id="elecModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('elecModal')">&times;</span>
+            <h2>Mini Electronics Projects</h2>
+            <p>Utilized softwares such as Altium and KiCad. Self-taught in PCB design. Participating in avionics-related pcb design.</p>
+            <div class="modal-gallery">
+                <img src="assets/elec1.png" alt="pcb">
+            </div>
+        </div>
+    </div>
+
+    <!-- cad modal-->
+    <div id="cadModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('cadModal')">&times;</span>
+            <h2>Mini CAD Projects</h2>
+            <p>Utilized softwares such as SolidWorks and Blender. Printed 3D models using a Bambu Labs (X2D) printer.</p>
+            <div class="modal-gallery">
+                <img src="assets/cad1.png" alt="shaaark">
+            </div>
+        </div>
+    </div>
+
     <!--  ALL MODALS OF EACH PROJECT CARD GOES HERE  -->
         <!-- Modal for AgriShare Project Card -->
     <div id="agriShareModal" class="modal">
@@ -385,8 +409,6 @@
             <span class="close" onclick="closeModal('agriShareModal')">&times;</span>
             <h2>AgriShare Prototype</h2>
             <p>An interactive, real-time guide app for plant care practices mainly for hobbyists and small-scale framers. This bridges the gap between existing separate community, marketplace, and real-time guidance tools to incoporate a more personalized (with sensor data), engaging approach. Used Figma to create wireframes for as a mobile app prototype.</p>
-
-            <!-- Gallery inside modal of AgriShare images-->
             <div class="modal-gallery">
                 <img src="assets/AgriShare1.png" alt="AgriShare1">
                 <img src="assets/AgriShare2.png" alt="AgriShare2"> 
