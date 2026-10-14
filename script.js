@@ -51,6 +51,38 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+// carousel fincitonatal
+window.nextCardImage = function(button) {
+
+    const container = button.parentElement;
+
+    const img = container.querySelector(".carousel-preview");
+
+    const images = img.dataset.images.split(",");
+
+    let index = parseInt(img.dataset.index);
+
+    index = (index + 1) % images.length;
+
+    img.src = images[index];
+    img.dataset.index = index;
+};
+
+window.prevCardImage = function(button) {
+
+    const container = button.parentElement;
+
+    const img = container.querySelector(".carousel-preview");
+
+    const images = img.dataset.images.split(",");
+
+    let index = parseInt(img.dataset.index);
+
+    index = (index - 1 + images.length) % images.length;
+
+    img.src = images[index];
+    img.dataset.index = index;
+};
 
     // Navbar background on scroll
     window.addEventListener('scroll', function() {

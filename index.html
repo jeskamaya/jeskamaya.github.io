@@ -116,9 +116,14 @@
 
                 <div class="project-card" onclick="openModal('elecModal')">
                     <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fa fa-microchip"></i>
-                        </div>
+                        <button class="card-carousel-btn left" onclick="event.stopPropagation(); prevCardImage(this)">❮</button>
+                        <img
+                            src="assets/elec2.png"
+                            alt="Electronics Project"
+                            class="carousel-preview"
+                            data-images="assets/elec1.png,assets/elec2.png"
+                            data-index="0">    
+                        <button class="card-carousel-btn right" onclick="event.stopPropagation(); nextCardImage(this)">❯</button>
                     </div>
                         <div class="project-content">
                             <h3>Electronics Design</h3>
@@ -130,16 +135,21 @@
                                 <span class="tech-tag">ESP32</span>
                             </div>
                             <div class="project-links">
-                                <span class="project-link">Life in Weeks Hardware Project</span>
+                                <span class="project-link">Electronics Hobbyist</span>
                             </div>
                         </div>
                 </div>
 
                 <div class="project-card" onclick="openModal('cadModal')">
                     <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fa fa-cube"></i>
-                        </div>
+                        <button class="card-carousel-btn left" onclick="event.stopPropagation(); prevCardImage(this)">❮</button>
+                        <img
+                            src="assets/cad1.png"
+                            alt="CAD Project"
+                            class="carousel-preview"
+                            data-images="assets/cad1.png,assets/cad2.png,assets/cad3.png"
+                            data-index="0">    
+                        <button class="card-carousel-btn right" onclick="event.stopPropagation(); nextCardImage(this)">❯</button>
                     </div>
                         <div class="project-content">
                             <h3>3D Modelling</h3>
@@ -155,11 +165,42 @@
                         </div>
                 </div>
 
+                <div class="project-card" onclick="openModal('hackCamodal')">
+                    <div class="project-image">
+                        <button class="card-carousel-btn left" onclick="event.stopPropagation(); prevCardImage(this)">❮</button>
+                        <img
+                            src="assets/hackCa4.jpg"
+                            alt="Hack Canada"
+                            class="carousel-preview"
+                            data-images="assets/hackCa1.png,assets/hackCa2.png,assets/hackCa3.jpg,assets/hackCa4.jpg"
+                            data-index="0">    
+                        <button class="card-carousel-btn right" onclick="event.stopPropagation(); nextCardImage(this)">❯</button>
+                    </div>
+                        <div class="project-content">
+                            <h3>Hack Canada 2026</h3>
+                            <p>In a time when motivation and focus are harder to maintain than ever, we wanted to create more than just another study timer. 
+                                MyFocusFriend is a study companion that responds to how you feel in the moment, making studying feel less isolating and more engaging. Your own personal study buddy!</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Integrating software and hardware</span>
+                                <span class="tech-tag">Tailscale</span>
+                                <span class="tech-tag">Raspberry Pi 5</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://devpost.com/software/myfocusfriend" class="project-link" target="_blank">Devpost Hack Canada 2026</a>
+                            </div>
+                        </div>
+                </div>
+
                 <div class="project-card" onclick="openModal('agriShareModal')">
                     <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fa-solid fa-tree"></i>
-                        </div>
+                        <button class="card-carousel-btn left" onclick="event.stopPropagation(); prevCardImage(this)">❮</button>
+                        <img
+                            src="assets/AgriShare3.png"
+                            alt="AgriShare Project"
+                            class="carousel-preview"
+                            data-images="assets/AgriShare1.png,assets/AgriShare2.png,assets/AgriShare3.png,assets/AgriShare4.png,assets/AgriShare5.png,assets/AgriShare6.png"
+                            data-index="0">    
+                        <button class="card-carousel-btn right" onclick="event.stopPropagation(); nextCardImage(this)">❯</button>
                     </div>
                         <div class="project-content">
                             <h3>AgriShare</h3>
@@ -177,13 +218,17 @@
 
                 <div class="project-card" onclick="openModal('gameDevModal')">
                     <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-chalkboard-teacher"></i>
-                        </div>
-                        <!-- Add your screenshot here: <img src="screenshots/game-dev-camp.png" alt="Game Development Camp" class="project-screenshot"> -->
+                        <button class="card-carousel-btn left" onclick="event.stopPropagation(); prevCardImage(this)">❮</button>
+                        <img
+                            src="assets/EngOutreach3.png"
+                            alt="Engineering Outreach Program"
+                            class="carousel-preview"
+                            data-images="assets/EngOutreach1.png,assets/EngOutreach2.png,assets/EngOutreach3.png,assets/EngOutreach4.png,assets/EngOutreach5.png,assets/EngOutreach6.png,assets/EngOutreach7.png,assets/EngOutreach8.png"
+                            data-index="0">    
+                        <button class="card-carousel-btn right" onclick="event.stopPropagation(); nextCardImage(this)">❯</button>
                     </div>
                     <div class="project-content">
-                        <h3>Game Development Camp</h3>
+                        <h3>Engineering Outreach Program Instructor - Game Development Camp</h3>
                         <p>Empowered grades 7-8 students by teaching engineering design principles, coding fundamentals, and iterative game optimization through Python and block-based programming.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Public Speaking</span>
@@ -221,9 +266,14 @@
                 <!-- hoodie design project-->
                 <div class="project-card" onclick="openModal('hoodieDesignModal')">
                     <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-tshirt"></i>
-                        </div>
+                        <button class="card-carousel-btn left" onclick="event.stopPropagation(); prevCardImage(this)">❮</button>
+                        <img
+                            src="assets/ver1-mechanical-hoodie-design.png"
+                            alt="Mechanical Hoodie Design"
+                            class="carousel-preview"
+                            data-images="assets/software-hoodie-design.png,assets/ver1-mechanical-hoodie-design.png"
+                            data-index="0">    
+                        <button class="card-carousel-btn right" onclick="event.stopPropagation(); nextCardImage(this)">❯</button>
                     </div>
                     <div class="project-content">
                         <h3>Hoodie Merch Design</h3>
@@ -238,11 +288,16 @@
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" onclick="openModal('sponsModal')">
                     <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-users"></i>
-                        </div>
+                        <button class="card-carousel-btn left" onclick="event.stopPropagation(); prevCardImage(this)">❮</button>
+                        <img
+                            src="assets/spons1.png"
+                            alt="Sponsorship Design"
+                            class="carousel-preview"
+                            data-images="assets/spons1.png,assets/spons2.png,assets/spons3.png,assets/spons4.png,assets/spons5.png"
+                            data-index="0">    
+                        <button class="card-carousel-btn right" onclick="event.stopPropagation(); nextCardImage(this)">❯</button>
                     </div>
                     <div class="project-content">
                         <h3>Sponsorship Package & Communications</h3>
@@ -257,11 +312,16 @@
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" onClick="openModal('ledgermodal')">
                     <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-robot"></i>
-                        </div>
+                        <button class="card-carousel-btn left" onclick="event.stopPropagation(); prevCardImage(this)">❮</button>
+                        <img
+                            src="assets/ledger3.png"
+                            alt="Automated Ledger"
+                            class="carousel-preview"
+                            data-images="assets/ledger1.png,assets/ledger2.png,assets/ledger3.png"
+                            data-index="0">    
+                        <button class="card-carousel-btn right" onclick="event.stopPropagation(); nextCardImage(this)">❯</button>
                     </div>
                     <div class="project-content">
                         <h3>Automated Ledger</h3>
@@ -271,7 +331,7 @@
                             <span class="tech-tag">JavaScript</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link">GitHub</a>
+                            <a href="https://github.com/jeskamaya/ledgerScript" class="project-link">GitHub</a>
                             <a href="https://engineering.ontariotechu.ca/current-students/current-undergraduate/clubs_and_societies/engineering-student-society.php" class="project-link">Engineering Students' Society</a>
                         </div>
                     </div>
@@ -318,6 +378,7 @@
 
                 <div class="project-card">
                     <div class="project-image">
+
                         <div class="image-placeholder">
                             <i class="fas fa-hospital"></i>
                         </div>
@@ -354,11 +415,16 @@
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" onclick="openModal('bioblockmodal')">
                     <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-trophy"></i>
-                        </div>
+                        <button class="card-carousel-btn left" onclick="event.stopPropagation(); prevCardImage(this)">❮</button>
+                        <img
+                            src="assets/bioblock1.jpg"
+                            alt="bioblock Design"
+                            class="carousel-preview"
+                            data-images="assets/bioblock1.jpg,assets/bioblock2.jpg"
+                            data-index="0">    
+                        <button class="card-carousel-btn right" onclick="event.stopPropagation(); nextCardImage(this)">❯</button>
                     </div>
                     <div class="project-content">
                         <h3>BioBlock - Natural Filter</h3>
@@ -383,9 +449,10 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal('elecModal')">&times;</span>
             <h2>Mini Electronics Projects</h2>
-            <p>Utilized softwares such as Altium and KiCad. Self-taught in PCB design. Participating in avionics-related pcb design.</p>
+            <p>Utilized softwares such as Altium and KiCad. Self-taught in PCB design. Participating in avionics-related pcb design. On the left is my first PCB design, traffic light, to get use with the environment. On the right is a schematic for a power supply unit using a voltage regulator and a battery charging unit. This is to help regulate the power at which devices operate from a battery, by cable, or both.</p>
             <div class="modal-gallery">
                 <img src="assets/elec1.png" alt="pcb">
+                <img src="assets/elec2.png" alt="pcb">
             </div>
         </div>
     </div>
@@ -397,13 +464,29 @@
             <h2>Mini CAD Projects</h2>
             <p>Utilized softwares such as SolidWorks and Blender. Printed 3D models using a Bambu Labs (X2D) printer.</p>
             <div class="modal-gallery">
-                <img src="assets/cad1.png" alt="shaaark">
+                <img src="assets/cad1.png" alt="cad1">
+                <img src="assets/cad2.png" alt="cad2">
+                <img src="assets/cad3.png" alt="cad3">
             </div>
         </div>
     </div>
 
-    <!--  ALL MODALS OF EACH PROJECT CARD GOES HERE  -->
-        <!-- Modal for AgriShare Project Card -->
+    <!-- hackCa modal-->
+    <div id="hackCamodal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('hackCamodal')">&times;</span>
+            <h2>Mini CAD Projects</h2>
+            <p>Attended a hackathon in a team of 4 people to prototype an academic focus friend! My contribution was in the development and ideating aspect of MyFocusFriend! Used diagrams to show how software and hardware connected using Tailscale to remotely input the program into the Raspberry Pi 5.</p>
+            <div class="modal-gallery">
+                <img src="assets/hackCa1.png" alt="hackCanada1">
+                <img src="assets/hackCa2.png" alt="hackCanada2">
+                <img src="assets/hackCa3.jpg" alt="hackCanada3">
+                <img src="assets/hackCa4.jpg" alt="hackCanada4">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for AgriShare Project Card -->
     <div id="agriShareModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('agriShareModal')">&times;</span>
@@ -416,6 +499,33 @@
                 <img src="assets/AgriShare4.png" alt="AgriShare4"> 
                 <img src="assets/AgriShare5.png" alt="AgriShare5"> 
                 <img src="assets/AgriShare6.png" alt="AgriShare6"> 
+            </div>
+        </div>
+    </div>
+
+    <!-- modal for ledger-->
+    <div id="ledgermodal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('ledgermodal')">&times;</span>
+            <h2>Ledger</h2>
+            <p>My time as Vice President of Finance and Administration, I noticed a lack of process efficiency between students and the finance department. There was a lot of manual work in reimbursements and purchasing when the same data come in and go. I used an Appscript code for google sheets that combines the usage of a google form submission to track expenses. I also automated sponsorships that led to 300+ emails sent to companies which successfully secured software licenses and monetary aid for deisgn teams (+$2.5k) </p>
+            <div class="modal-gallery">
+                <img src="assets/ledger1.png" alt="ledger1">
+                <img src="assets/ledger2.png" alt="ledger2"> 
+                <img src="assets/ledger3.png" alt="ledger3">
+            </div>
+        </div>
+    </div>
+
+    <!-- modal for bioblock-->
+    <div id="bioblockmodal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('bioblockmodal')">&times;</span>
+            <h2>Bioblock</h2>
+            <p>Designed the software and mechanical hoodies. The mechanical design ended up being used and iterated for final production.</p>
+            <div class="modal-gallery">
+                <img src="assets/bioblock1.jpg" alt="bioblock1">
+                <img src="assets/bioblock2.jpg" alt="bioblock2"> 
             </div>
         </div>
     </div>
@@ -433,22 +543,42 @@
         </div>
     </div>
 
-<!-- Modal for Game Development Camp Project Card -->
-<div id="gameDevModal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('gameDevModal')">&times;</span>
-        <h2>My Work at Engineering Outreach - Game Development Camp</h2>
-        <p>Created a bunch of different, fun, and simple activities for students in Gr 7-8. Focusing on STEM skill-building using fun technology like Makey Makey, Scratch, Python, TinkerCAD, and hands-on building.</p>
-        <div class="modal-gallery">
-            <img src="assets/EngOutreach1.png" alt="Eng Outreach 1">
-            <img src="assets/EngOutreach2.png" alt="Eng Outreach 2"> 
-            <img src="assets/EngOutreach3.png" alt="Eng Outreach 3">
-            <img src="assets/EngOutreach4.png" alt="Eng Outreach 4">
-            <img src="assets/EngOutreach5.png" alt="Eng Outreach 5">
-            <img src="assets/EngOutreach6.png" alt="Eng Outreach 6">
+    <!-- Modal for Game Development Camp Project Card -->
+    <div id="gameDevModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('gameDevModal')">&times;</span>
+            <h2>My Work at Engineering Outreach - Game Development Camp</h2>
+            <p>Created a bunch of different, fun, and simple activities for students in Gr 7-8. Focusing on STEM skill-building using fun technology like Makey Makey, Scratch, Python, TinkerCAD, and hands-on building.
+            Led hands-on workshops to teach young students programming and design concepts, using interactive demos that earned positive feedback (93% of participants reported improved coding and digital skills). Collaborated with teammates to deliver workshops that left 94% of participants more confident in their STEM abilities!
+            </p>
+            <div class="modal-gallery">
+                <img src="assets/EngOutreach1.png" alt="Eng Outreach 1">
+                <img src="assets/EngOutreach2.png" alt="Eng Outreach 2"> 
+                <img src="assets/EngOutreach5.png" alt="Eng Outreach 5">
+                <img src="assets/EngOutreach3.png" alt="Eng Outreach 3">
+                <img src="assets/EngOutreach4.png" alt="Eng Outreach 4">
+                <img src="assets/EngOutreach7.png" alt="Eng Outreach 7">
+                <img src="assets/EngOutreach6.png" alt="Eng Outreach 6">
+                <img src="assets/EngOutreach8.png" alt="Eng Outreach 8">
+            </div>
         </div>
     </div>
-</div>
+
+    <!-- sponsorships modal-->
+    <div id="sponsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('sponsModal')">&times;</span>
+            <h2>Sponsorships</h2>
+            <p>Created the sponsorship package for the Engineering Students' Society in the 2025-2026 academic year. This is to support all student-led initiatives in engineeering competitions, workshops, and events.</p>
+            <div class="modal-gallery">
+                <img src="assets/spons1.png" alt="sponsorship1">
+                <img src="assets/spons2.png" alt="sponsorship2">
+                <img src="assets/spons3.png" alt="sponsorship3">
+                <img src="assets/spons4.png" alt="sponsorship4">
+                <img src="assets/spons5.png" alt="sponsorship5">  
+            </div>
+        </div>
+    </div>
 
     <section id="testimonials" class="testimonials">
         <div class="container">
@@ -460,7 +590,7 @@
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">
-                            <img src="https://media.licdn.com/dms/image/v2/D5603AQFa5rXXudYIGw/profile-displayphoto-shrink_100_100/B56ZXJbmw8GsAY-/0/1742841212289?e=1791417600&v=beta&t=EsLir5RUPKyMuDJLIbrCYq21BjrljhQeRYcn9vxjkJg" alt="Joshua Mather">
+                            <img src="assets/joshuamather.jpeg" alt="Joshua Mather">
                         </div>
                         <div class="author-info">
                             <h4>Joshua Mather</h4>
@@ -478,7 +608,7 @@
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">
-                            <img src="https://media.licdn.com/dms/image/v2/D5603AQGH1XdHeeJsdg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1731035678370?e=1791417600&v=beta&t=Va-eSSwGRDrJ9PmwBZyBfA9k04sjBe4bMKk7EdWlTek" alt="Kamika Sylvester">
+                            <img src="assets/kamika.jpeg" alt="Kamika Sylvester">
                         </div>
                         <div class="author-info">
                             <h4>Kamika Sylvester</h4>
@@ -489,11 +619,11 @@
 
                 <div class="testimonial-card">
                     <div class="testimonial-content">
-                        <p class="testimonial-text">"Maya brings a youthful perspective which helps her in creating engaging events and content for our engineering community. Maya is reliable, bright, and a joyous individual. I highly recommend Maya for any role where she is able to share her marketing, communication, and project coordination skills. Please do not hesitate to contact me with any questions regarding Maya’s experience with ASME"</p>
+                        <p class="testimonial-text">"Maya brings a youthful perspective which helps her in creating engaging events and content for our engineering community. Maya is reliable, bright, and a joyous individual. I highly recommend Maya for any role where she is able to share her marketing, communication, and project coordination skills. Please do not hesitate to contact me with any questions regarding Maya’s experience with ASME."</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">
-                            <img src="https://media.licdn.com/dms/image/v2/D5603AQGT14CTuwUCew/profile-displayphoto-scale_400_400/B56aBSCr0MJwAg-/0/1788082832197?e=1791417600&v=beta&t=syts2XzZemGf0ptHKBhIzvFz45XXb1AtCeidl-8Rn0E" alt="Madison Kidd">
+                            <img src="assets/madisonkidd.png" alt="Madison Kidd">
                         </div>
                         <div class="author-info">
                             <h4>Madison Kidd</h4>

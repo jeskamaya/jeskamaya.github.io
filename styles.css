@@ -406,6 +406,49 @@ section {
     overflow: hidden;
 }
 
+/* carousel stuf*/
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: var(--primary-gradient);
+    pointer-events: none;
+}
+
+.carousel-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin:0;
+    padding:0;
+}
+
+.card-carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 32px;
+    height: 32px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(0,0,0,0.6);
+    color: white;
+
+    cursor: pointer;
+    z-index: 10;
+}
+
+.card-carousel-btn.left {
+    left: 10px;
+}
+
+.card-carousel-btn.right {
+    right: 10px;
+}
+
 .project-title {
     transition:outline 0.3s ease;
 }
@@ -427,14 +470,7 @@ section {
     color: var(--white);
     transition: opacity 0.3s ease;
 }
-.project-no-image .image-placeholder {
-    width: auto;
-    height: auto;
-    background: none;
-    font-size: 3rem;
-    color: #ffffff;
-    transition: opacity 0.3s ease;
-}
+
 .modal {
     display: none; /* hidden by default */
     position: fixed;
@@ -466,6 +502,9 @@ section {
     box-sizing: border-box;
 }
 
+.modal-content p {
+    font-size: 14px;
+}
 
 @keyframes popUp {
     from { transform: scale(0.9); opacity: 0;}
@@ -477,6 +516,7 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
     justify-items: center;
+    padding-top: 1rem;
 }
 
 .modal-gallery img {
